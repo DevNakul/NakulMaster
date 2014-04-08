@@ -3,7 +3,7 @@ public class SampleDeployClass {
 
     public static testmethod void t1() {
         helloMethod();
-
+        
         Account acc = new Account(Name= 'fred');
         insert acc; // hit the trigger
 
@@ -13,6 +13,7 @@ public class SampleDeployClass {
     }
 
     public static String getPhone() {
+        System.debug('Hello getPhone');
         return 'SamplePhone#';
     }
     
