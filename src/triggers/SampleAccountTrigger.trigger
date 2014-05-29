@@ -3,5 +3,6 @@ trigger SampleAccountTrigger on Account bulk (before insert) {
         Account acct = System.Trigger.new[i];
         acct.phone = SampleDeployClass.getPhone();
 		system.debug();
+		system.debug();
     }
 }
