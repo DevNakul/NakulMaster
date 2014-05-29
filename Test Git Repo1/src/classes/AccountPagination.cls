@@ -1,4 +1,5 @@
 public with sharing class AccountPagination {
+	private String test;
     private final Account acct;  
     String queryString {get;set;}
     // The constructor passes in the standard controller defined
