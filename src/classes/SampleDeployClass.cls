@@ -13,11 +13,9 @@ public class SampleDeployClass {
     }
 
     public static String getPhone() {
-        System.debug('Hello getPhone');
         return 'SamplePhone#';
     }
     
     public static void helloMethod() {
-		System.debug('Hello');
     }
 }
