@@ -1,0 +1,15 @@
+<apex:page >
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet"/>
+<script>
+function call(){
+    alert('hey');
+}
+function controllerFun ($scope){
+}
+</script>
+<div ng-controller="controllerFun">
+<button type="button" value="Click" ng-Click="call()" />
+</div>
+</apex:page>

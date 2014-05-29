@@ -1,0 +1,9 @@
+<apex:page >
+    <apex:form >
+        <c:MultiPicklistTemp objectAPIName="Account"
+            fieldName="test_multi__c"
+            size="14"
+            width="200px"
+            />
+    </apex:form>
+</apex:page>

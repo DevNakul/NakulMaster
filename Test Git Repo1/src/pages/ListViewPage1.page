@@ -1,0 +1,30 @@
+<apex:page controller="ListViewClass">
+    <apex:form >   
+        <apex:inputText value="{!searchString}" id="searchTxt" />
+        <input type = "button" name="Seach Records" value="Search" onclick="Search('{!$CurrentPage.parameters.object}','{!$CurrentPage.parameters.fldSet}');"/>
+        <apex:actionFunction action="{!searchRecords}" name="Search" >
+            <apex:param assignTo="{!ObjectName}" name="ObjectName" value=""/>
+            <apex:param assignTo="{!FieldSetName}" name="FieldSetName" value=""/>
+        </apex:actionFunction>
+        <apex:commandButton action="{!reset}" value="Reset"/>
+         <table border="1">
+            <tr>
+                <apex:repeat value="{!fieldsLabel}" var="f">
+                    <th border="1">
+                        {!f}
+                    </th>
+                </apex:repeat>
+            </tr>
+            <apex:repeat value="{!lst}" var="list">
+                <tr>
+                    <apex:repeat value="{!fieldAPIName}" var="fld">
+                        <td border="1">
+                            {!list[fld]}
+                        </td>
+                    </apex:repeat>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+    </apex:form> 
+</apex:page>

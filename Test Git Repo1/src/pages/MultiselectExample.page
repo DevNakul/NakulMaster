@@ -1,0 +1,10 @@
+<apex:page controller="MultiselectExampleController">
+    <apex:form >
+        <c:MultiselectPicklist leftLabel="Available"
+            leftOptions1="{!availablePicklistValues }"
+            rightLabel="Selected"
+            rightOptions1="{!selectedPicklistValues}"
+            size="14"
+            width="200px"/>
+    </apex:form>
+</apex:page>

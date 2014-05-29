@@ -1,0 +1,22 @@
+<apex:page controller="testApex">
+    <apex:dynamicComponent componentValue="{!outText}"/>
+    <apex:form >
+    <apex:selectList value="{!selectedvalue}" multiselect="false" size="1">
+        <apex:selectOptions value="{!availableValues}" />
+    </apex:selectList>
+    
+    <apex:selectList value="{!selectedvalue}" multiselect="false" size="1">
+        <apex:selectOption value="{!test}" />
+    </apex:selectList>
+    
+    <apex:selectradio value="{!selectedValue}">
+        <apex:selectoptions value="{!availableValues}"></apex:selectoptions>
+    </apex:selectradio>
+    
+    <apex:outputText id="out1" value="hello {!count} "></apex:outputText>
+    <apex:actionPoller action="{!incrementCounter}" reRender="out1" interval="5"/>
+    
+    <apex:outputText id="out2" value="Click Me {!count1} "></apex:outputText>
+    <apex:actionSupport event="onclick" reRender="out2" action="{!incrementCounter1}"/>
+    </apex:form>
+</apex:page>

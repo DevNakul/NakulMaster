@@ -1,0 +1,103 @@
+<apex:page >
+<style>
+#handlebarContainer {
+width: 9px;
+left: 214px;
+top: 9px;
+bottom: 20px;
+height: auto;
+}
+#handlebarContainer {
+position: absolute;
+bottom: 0;
+top: 0;
+left: 200px;
+height: 100%;
+cursor: url(/img/cursors/col-collapse.cur),pointer;
+overflow-y: hidden;
+text-decoration: none;
+}
+a {
+color: #333435;
+}
+
+.zen .zen-assistiveText {
+position: absolute !important;
+height: 1px;
+width: 1px;
+overflow: hidden;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px,1px,1px,1px);
+}
+#handlebarContainer {
+cursor: url(/img/cursors/col-collapse.cur),pointer;
+}
+#handlebarContainer .indicator {
+height: 31px;
+width: 9px;
+right: 0;
+background: url(/img/alohaSkin/sidebar_sprite.png) 0 0 no-repeat;
+}
+#handlebarContainer .indicator {
+position: absolute;
+z-index: 6;
+right: 1px;
+width: 6px;
+height: 41px;
+background: url(/img/sidebar/LNav_twisty_opened.gif) no-repeat top left;
+}
+#pinIndicator {
+top: 0;
+}
+#pinIndicator {
+top: 20px;
+}
+
+#handlebarContainer {
+cursor: url(/img/cursors/col-collapse.cur),pointer;
+}
+
+#handlebarContainer .indicator {
+height: 31px;
+width: 9px;
+right: 0;
+background: url(/img/alohaSkin/sidebar_sprite.png) 0 0 no-repeat;
+}
+#handlebarContainer .indicator {
+position: absolute;
+z-index: 6;
+right: 1px;
+width: 6px;
+height: 41px;
+background: url(/img/sidebar/LNav_twisty_opened.gif) no-repeat top left;
+}
+#pinIndicator2 {
+bottom: 0;
+}
+#pinIndicator2 {
+bottom: 20px;
+}
+#handlebarContainer #handle {
+background: transparent;
+width: 5px;
+position: absolute;
+top: 5px;
+bottom: 5px;
+right: 2px;
+}
+#handlebarContainer .pinBox {
+background: url(/img/sidebar/LNav_handleBG.gif) repeat-y right;
+z-index: 5;
+width: 6px;
+height: 100%;
+display: block;
+}
+</style>
+
+<a class="zen handlebarContainer" href="javascript:void(0);" id="handlebarContainer" title="Click to Close Sidebar [Alt+S]">
+    <span class="zen-assistiveText">Click to Close Sidebar</span>
+    <span class="indicator" id="pinIndicator"></span>
+    <span class="indicator" id="pinIndicator2"></span>
+    <span class="pinBox" id="handle">&nbsp;</span>
+</a>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page controller="SearchController">
+    <apex:form >
+        <apex:inputText value="{!searchString}" id="searchTxt" />
+        
+        <apex:commandButton action="{!searchRecords}" value="Search" />
+        
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!records}" var="opp">
+                <apex:column >
+                    <a onclick="openPage('{!opp.Id}');"> {!opp.Name} </a>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <script>
+            function openPage(Id){
+                window.open('/apex/ShowDetailPage?id='+Id);
+            }
+        </script>
+    </apex:form>
+</apex:page>

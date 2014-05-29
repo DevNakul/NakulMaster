@@ -1,0 +1,11 @@
+<apex:page standardController="Account" recordSetVar="acc">
+    <apex:pageBlock >
+        <apex:dataTable value="{!acc}" var="a">
+            <apex:column value="{!a.Name}"/>
+        </apex:dataTable>
+        
+        <apex:dataList value="{!acc}" var="aa">
+            {!aa.Name}
+        </apex:dataList>
+     </apex:pageBlock>
+</apex:page>

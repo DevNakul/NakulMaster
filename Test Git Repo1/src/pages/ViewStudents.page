@@ -1,0 +1,17 @@
+<apex:page controller="ViewStudents">
+    <apex:form >
+        Select Class: 
+        <apex:selectList value="{!classes}" multiselect="false" size="1" onchange="test();">
+            <apex:selectOptions value="{!items}"/>
+        </apex:selectList>
+
+        <apex:actionFunction action="{!showStudents}" name="test" rerender="stdPanel" />
+        <br/><br/>List of Students:
+        <apex:outputPanel id="stdPanel">
+            <apex:dataList value="{!stdList}" var="student">
+                <apex:outputText value="{!student.Name}"/>
+            </apex:dataList>
+        </apex:outputPanel>
+    </apex:form>
+    
+</apex:page>
