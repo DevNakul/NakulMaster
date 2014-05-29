@@ -1,7 +1,0 @@
-<apex:page controller="MyClass1">
-    <apex:form >
-        <apex:actionFunction name="callMe"/>
-        
-        <apex:commandButton onclick="callMe();" value="Call"/>
-    </apex:form>
-</apex:page>

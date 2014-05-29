@@ -1,3 +1,0 @@
-<apex:page controller="SubmitApproval" action="{!submit}">
-
-</apex:page>

@@ -1,3 +1,0 @@
-<apex:page standardController="Student__c" showHeader="false" sidebar="false">
-    <apex:detail relatedList="false"/>
-</apex:page>
