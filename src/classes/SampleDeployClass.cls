@@ -17,6 +17,5 @@ public class SampleDeployClass {
     }
     
     public static void helloMethod() {
-		system.debug('added');
     }
 }
